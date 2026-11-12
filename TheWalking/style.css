@@ -1,17 +1,17 @@
-/* 3 e 4 - Reset e box sizing */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 10 e 11 - Variáveis */
+
 :root {
     --cor-sangue: #8b0000;
     --cor-zumbi: #2e8b57;
 }
 
-/* 6, 7, 8, 9 - Body */
+
 body {
     background-color: #1a1a1a;
     color: #e0e0e0;
@@ -19,7 +19,7 @@ body {
     line-height: 1.6;
 }
 
-/* 12, 13, 14, 15, 16 - Header */
+
 header {
     background-color: #000000;
     padding: 20px 40px;
@@ -28,19 +28,19 @@ header {
     align-items: center;
 }
 
-/* 17 */
+
 header h1 {
     color: var(--cor-sangue);
 }
 
-/* 18, 19, 20 - Menu */
+
 nav ul {
     display: flex;
     gap: 25px;
     list-style: none;
 }
 
-/* 21, 22, 23, 24 - Links */
+
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -49,35 +49,35 @@ nav a {
     transition: color 0.3s ease;
 }
 
-/* 25 */
+
 nav a:hover {
     color: var(--cor-zumbi);
 }
 
-/* 26 - Área principal */
+
 main {
     max-width: 1000px;
     margin: 40px auto;
 }
 
-/* 27 */
+
 section {
     margin-bottom: 60px;
 }
 
-/* 28, 29 - Títulos */
+
 h2 {
     color: var(--cor-zumbi);
     border-bottom: 2px solid var(--cor-sangue);
     padding-bottom: 10px;
 }
 
-/* 30 */
+
 #boas-vindas {
     text-align: center;
 }
 
-/* 31, 32, 33, 34 - Imagem */
+
 img {
     max-width: 100%;
     height: auto;
@@ -86,30 +86,28 @@ img {
     transition: filter 0.5s ease;
 }
 
-/* 35 */
+
 img:hover {
     filter: none;
 }
 
-/* 36 - Legenda */
+
 figcaption {
     font-style: italic;
     color: #888;
     margin-top: 10px;
 }
 
-/* 37 - Flexbox nos benefícios */
 #beneficios {
     display: flex;
     gap: 40px;
-    flex-wrap: wrap; /* mantém o título h2 acima da lista e do aside */
+    flex-wrap: wrap;
 }
 
 #beneficios h2 {
     flex-basis: 100%;
 }
 
-/* 38, 39 - Lista */
 ol {
     padding-left: 20px;
 }
@@ -118,12 +116,12 @@ li {
     margin-bottom: 15px;
 }
 
-/* 40 */
+
 strong {
     color: var(--cor-sangue);
 }
 
-/* 41, 42 - Aside */
+
 aside {
     background-color: #222222;
     padding: 20px;
@@ -131,7 +129,7 @@ aside {
     border: 1px dashed var(--cor-zumbi);
 }
 
-/* 43, 44 - Depoimento */
+
 blockquote {
     font-size: 1.2rem;
     font-style: italic;
@@ -139,14 +137,14 @@ blockquote {
     padding-left: 20px;
 }
 
-/* 45 - Autor */
+
 cite {
     display: block;
     text-align: right;
     color: red;
 }
 
-/* 46, 47, 48 - Tabela */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -162,14 +160,14 @@ th {
     color: white;
 }
 
-/* 49 - Fieldset */
+
 fieldset {
     border: 2px solid var(--cor-zumbi);
     padding: 25px;
     border-radius: 8px;
 }
 
-/* 50 - Botão */
+
 button[type="submit"] {
     background-color: var(--cor-zumbi);
     color: white;
@@ -183,7 +181,7 @@ button:hover {
     background-color: var(--cor-sangue);
 }
 
-/* 51 - Campos */
+
 input[type="text"],
 input[type="email"],
 select {
@@ -193,7 +191,7 @@ select {
     border-radius: 4px;
 }
 
-/* 52 - Cores dos campos */
+
 input[type="text"],
 input[type="email"],
 select {
@@ -202,21 +200,19 @@ select {
     border: 1px solid #555;
 }
 
-/* 53 - Foco */
+
 input:focus,
 select:focus {
     outline: none;
     border-color: var(--cor-zumbi);
 }
 
-/* 54 - Labels */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* 55 - FAQ */
 details {
     background-color: #222;
     padding: 15px;
@@ -224,20 +220,17 @@ details {
     border-left: 4px solid var(--cor-sangue);
 }
 
-/* 56 */
 summary {
     cursor: pointer;
     font-weight: bold;
     color: var(--cor-zumbi);
 }
 
-/* 57 */
 details p {
     margin-top: 15px;
     color: #bbb;
 }
 
-/* 58 - Rodapé */
 footer {
     text-align: center;
     padding: 30px;
@@ -245,7 +238,7 @@ footer {
     border-top: 1px solid #333;
 }
 
-/* 59 e 60 - Responsividade */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
